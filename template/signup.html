@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block a %}
+<div class="login" >
+<h2 id="h22">Sign up</h2>
+<form method="POST" action="{{ url_for('valid') }}">
+    <input class="f1" type="text" name="usr" placeholder="Enter username"><br><br>
+    <input class="f1" type="password" name="pwd" placeholder="Enter password"><br><br>
+    <input class="b1" type="submit" name="but" value="Sign up">
+</form><br><br>
+</div>
+
+{% endblock %}

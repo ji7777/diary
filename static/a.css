@@ -1,0 +1,195 @@
+.head{
+    background: rgba(0, 0, 0, 0.5);
+    height:150px;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 12px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    cursor: pointer;
+}
+.link1{
+    text-decoration: none;
+    text-shadow: 4px 4px 2px #259bcd;
+    color: aliceblue;
+}
+.link1:hover{
+    letter-spacing: 20px;
+}
+#ih{
+    background-image: url('pexels-suzy-hazelwood-1174122.jpg');
+    background-size: cover;
+}
+.login{
+    height: 350px;
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left:380px;
+    margin-right: 380px;
+    padding-top: 20px;
+    background: rgba(142, 144, 137, 0.5);
+    text-align: center;
+}
+.f1{
+    height:30px;
+    width:300px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(214, 226, 222);
+}
+#h22{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.b1{
+    width:160px;
+    height: 40px;
+    background-color: rgb(212, 175, 73);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.link2{
+    font-size: large;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 30px;
+    font-weight: bolder;
+
+}
+#new1{
+    font-weight: bolder;
+}
+.form2{
+    display: inline;
+}
+.otp1{
+    height:30px;
+    width:200px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(214, 226, 222);
+}
+.otp{
+    width:100px;
+    height: 20px;
+    background-color: rgb(212, 175, 73);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.id{
+    width:75%;
+    height:500px;
+    margin: 5%;
+    background-color: rgba(237, 230, 201,0.5);
+    background-image: none;
+    padding: 5%;
+}
+
+
+/* user creation page 
+no styling */
+
+/* diary page */
+.w1{
+    background-color: rgba(228, 233, 233, 0.497);
+    width: 98%;
+    height:700px;
+    padding-left: 30px;
+}
+.lis{
+    display: flex;
+    justify-content: space-around;
+    align-items: right;
+    background-color: rgb(161, 155, 155);
+    padding:10px 10px;
+    margin-right:220px;
+    margin-top:0;
+    width:98.7%;
+    min-height: 30px;
+}
+.l1{
+    list-style: none;
+    padding: 0 20px;
+    align-self: right;
+    font-size: large;
+}
+ul a{
+    transition: all 0.6s ease 0s;
+    text-decoration: none;
+    color: #000000;
+}
+ul a:hover {
+    color: #0b736b;
+    letter-spacing: 2px;
+}
+.mainn{
+    padding: 30px 30px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    gap:10px;
+}
+.diar{
+    width:90%;
+    height: 400px;
+    padding: 20px 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    overflow: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    resize: vertical;
+    background-color: linen;
+    
+}
+.save1{
+    width:150px;
+    height: 50px;
+    background-color: #cbe058;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.da{
+    float: right;
+    padding-right: 50px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+
+/* view1 -- allpages.html */
+.view1{
+    flex-basis: calc(50%-20px);
+    background-color: rgba(255, 255, 255, 0.75);
+    width:400px;
+    margin-bottom: 10px;
+    align-self: center;
+    height: max-content;
+    letter-spacing: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+.col{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.para{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: small;
+}

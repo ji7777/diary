@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+    <title>{{ titl }}</title>
+    <link rel="stylesheet" href="/static/a.css">
+    </head>
+<body style="background-color: rgb(202, 205, 193);">
+    <header class="head">
+        <a class="link1" href="{{ url_for('home') }}"><h1>Chronicle</h1></a>
+        
+    </header>
+<div class="col">      
+{% for j,m in a %}
+<p class="para">{{ j }}</p>
+<div class="view1">
+    {% for h in m.splitlines() %}
+    <p>{{ h }}<br></p>
+    {% endfor %}
+
+</div>
+
+{% endfor %}
+</div>    
+<a href="{{ url_for('diary')}}" style="font-size: small;">Back to home</a>
+    
+
+</body>

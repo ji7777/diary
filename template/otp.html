@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block a %}
+<div class="id">
+    <p>hi {{ user }}</p>
+<form method="POST" action="{{ url_for('otpv')}}">
+    <input class="otp1" type="password" name="otp" placeholder="Enter OTP"><br>
+    <input class="otp1" type="hidden" name="otph" value="{{ rand }}">
+    
+    <input class="otp" type="submit" name="but" value="Verify OTP"><br><br>
+</form></div>
+{% endblock %}

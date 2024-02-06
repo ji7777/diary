@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<title>Diary writing</title>
+<link rel="stylesheet" href="/static/a.css">
+</head>
+<body id="ih">
+    <header class="head">
+        <a class="link1" href="{{ url_for('diary') }}"><h1>Chronicle</h1></a>
+    </header>
+    <ul class="lis">
+        <li class="lis l1"><a href="{{ url_for('see') }}">Diary book</a></li>
+        <li class="lis l1"><a href="#">Profile</a></li>
+        <li class="lis l1"><a href="{{ url_for('logout')}}">Logout</a></li>
+        <li class="lis l1"><a href="#">Help</a></li>
+    </ul>
+
+    <div>
+        <div class="w1">
+        <b class="da">Date : {{ date }}</b>
+        <br>
+        <br>
+        <form class="mainn" method="post" action="{{ url_for('diary') }}">
+        
+        <textarea class="diar" name="diary" placeholder="Write your today's diary" ></textarea>
+        <button class="save1" type="text">Save</button>
+        </form>
+        </div>
+    </div>
+            
+</body>
