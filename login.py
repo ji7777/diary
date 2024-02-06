@@ -2,8 +2,8 @@ import snowflake.connector
 import random,smtplib
 from datetime import date
 from email.mime.text import MIMEText
-conn=snowflake.connector.connect(user='JISHIL',
-                                 password='Podamyre@123',
+conn=snowflake.connector.connect(user='username',
+                                 password='password',
                                  account='lu78023.ap-southeast-1',
                                  warehouse='COMPUTE_WH',
                                  database='diary',
@@ -60,7 +60,7 @@ class diaryclass(login):
         return r
 def sendotp(to):
     d=random.randint(1000,9999)
-    fromm='enikkchuttum@gmail.com'
+    fromm='email@gmail.com'
     subject='OTP for Signup MY DIARY'
     message=f'Your OTP is {d}.'
     a=smtplib.SMTP('smtp.gmail.com',587)
@@ -68,7 +68,7 @@ def sendotp(to):
     a.ehlo()
     a.starttls()
     a.ehlo()
-    a.login('enikkchuttum@gmail.com','sbwltvkrxvdmgrju')
+    a.login('email@gmail.com','password_email')
     a.sendmail(fromm,to,message)
     a.quit()
     return d
