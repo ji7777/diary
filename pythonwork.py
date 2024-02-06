@@ -3,6 +3,7 @@ import datetime,random,time
 from login import login,sendotp,diaryclass
 date1=datetime.date.today().strftime("%d %B %Y")
 app=Flask(__name__,template_folder='template',static_folder='static')
+app.secret_key = 'your_secret_key_here'
 @app.route('/')
 def home():
     
@@ -81,6 +82,10 @@ def logout():
         return render_template('logout.html')
     else:
         return redirect('home')
+@app.route('/profile')
+def new():
+    a=session["user"]
+    return render_template('profile.html',a=a)
 if __name__=="__main__":
     app.secret_key='jishilrajm'
     app.run(debug=True,)
